@@ -1,0 +1,77 @@
+@media (max-width: 800px) {
+  #about .about-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #about .about-us {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  #about .about-us p {
+    padding-top: 0.2rem;
+    padding-bottom: 0.8rem;
+  }
+
+  /* menu */
+  #menu .menu-ingredients {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #menu .about-ingredients {
+    text-align: center;
+    border-bottom: 0.5px dotted #fff;
+  }
+  #menu .about-bev {
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+  }
+
+  .header-booking .content {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  .header-booking .aside {
+    float: none;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .header-booking {
+    height: auto;
+  }
+  .header-booking .content .btn {
+    margin-bottom: 2rem;
+  }
+  .header-booking .content {
+    width: auto;
+  }
+
+  /* contact form */
+  .header-contact {
+    padding-top: 2rem;
+    height: auto;
+  }
+  .header-contact .content {
+    float: inherit;
+    text-align: left;
+    width: auto;
+  }
+
+  .contactform input,
+  .contactform textarea {
+    width: 80%;
+  }
+
+  .contactform {
+    padding-left: 2rem;
+  }
+  .header-contact .ikons {
+    text-align: left;
+    margin-left: 0.01rem;
+  }
+}

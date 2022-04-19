@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  font-weight: 80;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 80;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 0.5px solid #fff;
+  border-radius: 5%;
+  transition: border-color 0.5s;
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  border-color: transparent;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header-home {
+  background: url("../img/background.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.header-home .content h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.header-home .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  border-bottom: 2px transparent solid;
+  transition: border-color 0.5s;
+}
+
+.navbar a:hover {
+  border-color: #fff;
+}
+
+.navbar a.current {
+  border-color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* MAKE PICTURE DARKER */
+.header-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.47);
+}
+
+/* BRING TEXT OUT OF THE DARK OVERLAY */
+.header-home * {
+  z-index: 1;
+}
+
+/* ABOUT */
+#about .about-info {
+  background-color: rgb(47, 46, 46);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border-bottom: 0.3px dotted #fff;
+}
+
+#about .about-us {
+  padding-top: 2.5rem;
+}
+
+#about .about-us p {
+  padding: 1rem 1rem 0 0;
+}
+
+#about .about-us h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* MENU */
+.header-menu {
+  background: url("../img/chefs/burger.webp") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.header-menu .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding-left: 3.5rem;
+  padding-top: 10rem;
+}
+
+.header-menu .content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 15px 0 0;
+  padding-top: 2rem;
+}
+.header-menu .content .btn .next {
+  margin: 5rem;
+}
+
+#menu .menu-ingredients {
+  background-color: rgb(47, 46, 46);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#menu .about-ingredients p {
+  padding: 1rem 1rem 0 0;
+}
+
+#menu .about-ingredients h2 {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  padding-top: 1em;
+}
+
+#menu .about-ingredients {
+  padding-top: 1.2rem;
+}
+
+#menu .about-ingredients .bottom {
+  padding-bottom: 2rem;
+}
+#menu .about-bev .bottom {
+  padding-bottom: 2rem;
+}
+#menu .menu-chefs {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#menu .menu-chefs h2 {
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+/* BEVERAGE */
+#menu .about-bev p {
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#menu .about-bev h2 {
+  font-size: 1.6rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#menu .about-bev {
+  padding-top: 1.5rem;
+}
+
+/* BOOKING */
+.header-booking {
+  background: url("../img/rest1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+/* MAKE PICTURE DARKER */
+.header-booking::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.47);
+}
+
+/* BRING TEXT OUT OF THE DARK OVERLAY */
+.header-booking * {
+  position: relative;
+  z-index: 1;
+}
+
+.header-booking .content {
+  float: left;
+  text-align: left;
+  width: 60%;
+  padding-left: 3.5rem;
+  padding-top: 5rem;
+}
+
+.header-booking .content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 15px 0 0;
+}
+
+.header-booking .aside {
+  float: right;
+  width: 40%;
+  height: 80%;
+  padding-right: 5rem;
+  padding-top: 11rem;
+}
+
+.header-booking .aside .text-field {
+  display: grid;
+  grid-template-areas:
+    "firstname lastname"
+    "phone email"
+    "date time"
+    "message message";
+  grid-gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.header-booking .aside .text-field .text-input {
+  width: 90%;
+  height: 140%;
+}
+.header-booking .aside .text-field.firstname-input {
+  grid-area: firstname;
+}
+.header-booking .aside .text-field .lastname-input {
+  grid-area: lastname;
+}
+.header-booking .aside .text-field .phone-input {
+  grid-area: phone;
+}
+.header-booking .aside .text-field .email-input {
+  grid-area: email;
+}
+.header-booking .aside .text-field .date-input {
+  grid-area: date;
+}
+.header-booking .aside .text-field .time-input {
+  grid-area: time;
+}
+.header-booking .aside .text-field .message-input {
+  grid-area: message;
+  height: 60px;
+  width: 95.2%;
+}
+.header-booking .aside .text-field .text-input {
+  padding: 0.16rem 0.5rem;
+}
+.header-booking .aside .btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* CONTACT */
+.header-contact {
+  background: url("../img/bc2.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+.header-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.47);
+}
+
+.header-contact * {
+  position: relative;
+  z-index: 1;
+}
+
+.header-contact .content {
+  float: left;
+  text-align: left;
+  width: 60%;
+  height: 80%;
+  padding-left: 3.5rem;
+  padding-top: 5rem;
+}
+
+.header-contact .content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 15px 0 0;
+  padding-top: 2rem;
+}
+
+.header-contact .ikons {
+  padding-top: 3.5rem;
+  margin-left: 3rem;
+}
+.header-contact .ikons h3 {
+  text-transform: none;
+  display: inline;
+  padding: 2.5rem;
+}
+.header-contact .ikons .space {
+  padding-bottom: 1.5rem;
+}
+
+/* CONTACT FORM */
+.contactform {
+  padding-top: 10rem;
+}
+.contactform .form-group {
+  padding-top: 1rem;
+}
+
+.contactform label {
+  display: block;
+}
+
+.contactform input,
+.contactform textarea {
+  width: 30%;
+  padding: 0.4rem 0.5rem;
+  border: 1px none solid;
+}
+
+.contactform textarea {
+  height: 90px;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+.contactform .btn {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* GALLERY */
+.header-gallery {
+  background: url("../img/bar/bar_background.jpg") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+}
+.header-gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.header-gallery * {
+  position: relative;
+  z-index: 1;
+}
+
+/* MY TRY GALLERY */
+#gallery .gallery-header {
+  text-align: center;
+  padding-top: 3.5rem;
+}
+#gallery .pictures .pic1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 3rem 7rem 2rem 7rem;
+}
+#gallery .pictures .pic2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin: 0 7rem 0 7rem;
+}
+
+#gallery .pictures .pic-2-padding {
+  padding-bottom: 4rem;
+}
+.pictures .pic1 img:hover {
+  opacity: 0.7;
+}
+.pictures .pic2 img:hover {
+  opacity: 0.7;
+}
+/* FOOTER */
+#main-footer {
+  height: 8rem;
+  background-color: #333;
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  align-items: center;
+}
+
+#main-footer .social .fab {
+  border: 2px #fff solid;
+  border-radius: 50%;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.4rem;
+}
+
+#main-footer .social .fab:hover {
+  background-color: #fff;
+  color: #333;
+  transition: all 1s;
+  cursor: pointer;
+}
